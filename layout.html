@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 50%;
+  text-align center;
+}
+
+.menu .param {
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+
+.main {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="background-color:#0f0f0f;padding:15px;text-align:center;">
+  <h1>iCurion Labs</h1>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="param">
+        <i>Weight</i> = 
+
+<input type="text" id="A" size="4" value="3" 
+       onchange="document.getElementById('B').value=this.value;">
+ 
+ 
+1 kg
+<input id="B" type ="range" min="0" max="1000" step="20" value="3" 
+       onchange="document.getElementById('A').value=this.value;">
+1000 kg
+    </div>
+    <div class="param">
+        <i>Thrust</i> = 
+<input type="text" id="tA" size="4" value="3" 
+       onchange="document.getElementById('tB').value=this.value;">
+ 
+ 
+1 N
+<input id="tB" type ="range" min="1" max="50000" step="50" value="3" 
+       onchange="document.getElementById('tA').value=this.value;">
+50000 N
+    </div>
+    <div class="param">
+        <i>Burn Duration</i> = 
+
+<input type="text" id="sA" size="4" value="3" 
+       onchange="document.getElementById('sB').value=this.value;">
+ 
+ 
+1second
+<input id="sB" type ="range" min="1" max="200" step="50" value="3" 
+       onchange="document.getElementById('sA').value=this.value;">
+200 seconds
+    </div>
+    <div class="param">
+        <i>Orbit</i> = 
+
+<input type="text" id="oA" size="4" value="3" 
+       onchange="document.getElementById('oB').value=this.value;">
+ 
+ 
+100 km
+<input id="oB" type ="range" min="1" max="200" step="50" value="3" 
+       onchange="document.getElementById('oA').value=this.value;">
+ 500 km
+    </div>
+  </div>
+
+  <div class="main">
+    <h2>Rocket Sim</h2>
+    <p>Design and launch your own rocket.</p>
+    <svg id="rocket" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+        <path d="M 246.733 33.919 Q 250 20.488 253.266 33.919 L 266.411 87.964 Q 269.677 101.395 263.144 101.395 L 236.855 101.395 Q 230.322 101.395 233.588 87.964 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" bx:shape="triangle 230.322 20.488 39.355 80.907 0.5 0.166 1@02cb785d"/>
+        <rect x="232.5" y="138.415" width="35" height="101.747" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+        <path d="M 230.386 203.956 Q 233.282 195.991 233.282 203.956 L 233.282 236.008 Q 233.282 243.973 230.386 243.973 L 218.73 243.973 Q 215.834 243.973 218.73 236.008 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" bx:shape="triangle 215.834 195.991 17.448 47.982 1 0.166 1@d90894f5"/>
+        <path d="M -270.944 203.851 Q -268.048 195.886 -268.048 203.851 L -268.048 235.904 Q -268.048 243.869 -270.944 243.869 L -282.6 243.869 Q -285.496 243.869 -282.6 235.904 Z" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);" transform="matrix(-1, 0, 0, 1, 0, 0)" bx:shape="triangle -285.496 195.886 17.448 47.983 1 0.166 1@73a038d8"/>
+        <rect x="248.811" y="199.739" width="4.527" height="44" style="fill: rgb(216, 216, 216); stroke: rgb(0, 0, 0);"/>
+        <rect x="232.5" y="102.842" width="35" height="40.802" style="stroke: rgb(0, 0, 0); fill: rgb(210, 26, 26);"/>
+        <text style="fill: rgb(233, 247, 247); font-family: Arial, sans-serif; font-size: 11px; white-space: pre;" transform="matrix(0.69348, 0, 0, 0.871795, 73.199326, -21.217621)" x="235.538" y="160.044">Valluvar</text>
+        <text style="fill: rgb(233, 247, 247); font-family: Arial, sans-serif; font-size: 11px; white-space: pre;" x="239.381" y="132.139">DV1</text>
+      </svg>
+  </div>
+
+
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+
+</body>
+</html>
+
