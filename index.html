@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>rocket calculation</title>
+</head>
+
+<body>
+
+<i>Weight</i> = 
+
+<input type="text" id="A" size="4" value="3" 
+       onchange="document.getElementById('A').value=this.value;">
+ 
+ 
+1 kg
+<input id="B" type ="range" min="1" max="1000" step="20" value="3" 
+       onchange="document.getElementById('B').value=this.value;">
+1000 kg
+<br/><br/>
+
+<i>Thrust</i> = 
+<input type="text" id="tA" size="4" value="3" 
+       onchange="document.getElementById('tB').value=this.value;">
+ 
+ 
+1 N
+<input id="tB" type ="range" min="1" max="50000" step="50" value="3" 
+       onchange="document.getElementById('tA').value=this.value;">
+50000 N
+<br/><br/>
+
+
+<i>Burn Duration</i> = 
+
+<input type="text" id="sA" size="4" value="3" 
+       onchange="document.getElementById('sB').value=this.value;">
+ 
+ 
+1second
+<input id="sB" type ="range" min="1" max="200" step="50" value="3" 
+       onchange="document.getElementById('sA').value=this.value;">
+200 seconds
+<br/><br/>
+
+
+<i>Orbit</i> = 
+
+<input type="text" id="oA" size="4" value="3" 
+       onchange="document.getElementById('oB').value=this.value;">
+ 
+ 
+100 km
+<input id="oB" type ="range" min="1" max="200" step="50" value="3" 
+       onchange="document.getElementById('oA').value=this.value;">
+ 500 km
+<br/><br/>
+
+
+</body>
+</html>
